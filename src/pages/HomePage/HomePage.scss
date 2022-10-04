@@ -1,0 +1,90 @@
+.home {
+    background: linear-gradient(170deg, rgba(255,255,255,1) 52%, rgba(222,220,212,1) 96%);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40rem;
+
+    &__nav {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__nav-link {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.about {
+    padding: 1rem;
+
+    &__content {
+        display: flex;
+    }
+
+    &__image {
+        border-radius: 50%;
+    }
+
+    &__text {
+        margin-right: 0;
+        line-height: 1.45rem;
+    }
+
+    &__icon {
+        margin: 0.5rem;
+
+        &:hover {
+            filter: invert(37%) sepia(47%) saturate(416%) hue-rotate(40deg) brightness(94%) contrast(99%);
+        }
+    }
+
+}
+
+.projects {
+    padding: 1rem;
+}
+
+.project {
+    display: flex;
+
+    &__image {
+        width: 20rem;        
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__text {
+        margin-left: 1rem;
+    }
+
+    &__stack {
+        font-style: italic;
+    }
+}
+
+.section-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 3rem;
+    box-shadow:  0px 10px 5px white, 0px -10px 5px white;
+    position: relative;
+    top: 5px;
+}
+
+.section-title {
+    color: rgb(77, 77, 77);
+    font-size: 1rem;
+}
