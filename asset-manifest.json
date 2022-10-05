@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1c6664b7.css",
+    "main.js": "/static/js/main.15a0cbcc.js",
+    "static/media/main-bg.jpg": "/static/media/main-bg.a7f4abeb2514f3c43e17.jpg",
+    "static/media/WNBA-preview2.png": "/static/media/WNBA-preview2.ad1a7bf8b2da265901b0.png",
+    "static/media/WNBA-preview.png": "/static/media/WNBA-preview.0a4df05f84407efbd82d.png",
+    "static/media/headshot.jpg": "/static/media/headshot.8c6b2674004672332d3a.jpg",
+    "static/media/ontrack-preview.png": "/static/media/ontrack-preview.001740077894ad507aa9.png",
+    "static/media/instock-preview.png": "/static/media/instock-preview.308161d237fa4e215560.png",
+    "static/media/github.svg": "/static/media/github.04be58c17b3d5e9744424d414240dd85.svg",
+    "index.html": "/index.html",
+    "static/media/linkedin.svg": "/static/media/linkedin.27a3f479ca1bbb0ceef19e395081fb94.svg",
+    "main.1c6664b7.css.map": "/static/css/main.1c6664b7.css.map",
+    "main.15a0cbcc.js.map": "/static/js/main.15a0cbcc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c6664b7.css",
+    "static/js/main.15a0cbcc.js"
+  ]
+}
