@@ -1,0 +1,19 @@
+// media queries
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media screen and (min-width: 1280px) {
+      @content;
+    }
+  }
+
+// flex contents and align according to parameters (default center)
+@mixin flex-contents ($main:center, $cross:center) {
+    display: flex;
+    justify-content: $main;
+    align-items: $cross;
+}

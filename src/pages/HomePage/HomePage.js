@@ -1,21 +1,24 @@
 import './HomePage.scss';
 import { Parallax } from 'react-parallax';
 import heroImage from '../../assets/images/main-bg.jpg';
-import onTrack from '../../assets/images/ontrack-preview.png';
+import ontrack from '../../assets/images/ontrack-preview.png';
+import wnba from '../../assets/images/WNBA-preview.png';
+import wnba2 from '../../assets/images/WNBA-preview2.png';
+import instock from '../../assets/images/instock-preview.png';
 import github from '../../assets/icons/github.svg';
 import linkedin from '../../assets/icons/linkedin.svg';
-import { Link } from 'react-router-dom';
 
 export default function HomePage() {
     return (
         <main className="home">
             <Parallax blur={5} bgImage={heroImage} bgImageAlt="background" strength={600}>
                 <div className="hero">
-                    <h1 className="hero_title">Sapphira Zheng</h1>
+                    <h1 className="hero__title">Sapphira Zheng</h1>
                     <ul className="hero__nav">
                         <li className="hero__nav-item"><a className="hero__nav-link" href="#about">About |&nbsp;</a></li>
                         <li className="hero__nav-item"><a className="hero__nav-link" href="#projects">Projects |&nbsp;</a></li>
-                        {/* <li className="hero__nav-item"><Link to="/resume" className="hero__nav-link">Resume</Link></li> */}
+                        <li className="hero__nav-item"><a className="hero__nav-link" href="https://docs.google.com/document/d/e/2PACX-1vTcTu5hINOBz4mqr_suK0p3VKFKykDrKBbkETy7IdyCBueCedAjc4yG1sJmiTuY49m8eyx634OsPuC-/pub" target="_blank">
+                            Resume<i className="bi-arrow-up-right"></i></a></li>
                     </ul>
                 </div>
             </Parallax>
@@ -37,19 +40,45 @@ export default function HomePage() {
             <section className="projects" id="projects">
                 <h2 className="section-title">PROJECTS</h2>
                 <div className="project">
-                    <img className="project__image" src={onTrack} alt="onTrack Fitness"></img>
+                    <img className="project__image" src={ontrack} alt="onTrack Fitness"></img>
                     <div className="project__text">
-                        <h3 className="project__title">onTrack Fitness</h3>
-                        <span className="project__stack">React, Node, Express, TailwindCSS, Auth0</span>
-                        <p className="project__description">An online workout aid that aims to help users reach fitness goals by providing an easy-to-use platform to structure/log workouts and visualize progress. An alternative to physical workout journals which are easy to lose and tedious to review. onTrack Fitness focuses on convenience through automatic data visualization and multiple device support.</p>
-                        <a href="https://ontrack-fitness.herokuapp.com/">link</a>
+                        <a className="project__link" href="https://ontrack-fitness.herokuapp.com/" target="_blank">
+                            <h3 className="project__title project__title--link">onTrack Fitness <i className="bi-arrow-up-right"></i></h3></a>
+                        <span className="project__stack">React, Node.js, Express.js, TailwindCSS, Auth0</span>
+                        <p className="project__description">An online workout aid that aims to help users reach fitness goals by providing 
+                            an easy-to-use platform to structure/log workouts and visualize progress. An alternative to physical workout journals 
+                            which are easy to lose and tedious to review. onTrack Fitness focuses on convenience through automatic data visualization 
+                            and multiple device support.</p>
+                        <a href="https://github.com/saphzheng/on-track__client" target="_blank"><img src={github}></img></a>
+                    </div>
+                </div>
+                <div className="project">
+                    <div className="project__images">
+                        <img className="project__image--mobile" src={wnba} alt="WNBA industry project"></img>
+                        <img className="project__image--mobile" src={wnba2} alt="WNBA industry project"></img>
+                    </div>
+                    <div className="project__text">
+                        <h3 className="project__title">WNBA Hackathon</h3>
+                        <span className="project__stack">React, Sass</span>
+                        <p className="project__description">A redesign of the WNBA mobile app in a 24-hour hackathon with the goal 
+                            of increasing fan engagement. Our strategy focussed on connecting to the user on a personal level by 
+                            leveraging the WNBA players as influencers, leaning into paid advertisement, and incorporating sharing functions within the app.
+                            Mockups and discussions were done using Figma and a prototype of the app was built to showcase our vision to the WBNA panel.</p>
+                        <a href="https://github.com/Matthew-Hawk/Industry-WNBA" target="_blank"><img src={github}></img></a>
+                    </div>
+                </div>
+                <div className="project">
+                    <img className="project__image" src={instock} alt="Instock"></img>
+                    <div className="project__text">
+                        <h3 className="project__title">InStock</h3>
+                        <span className="project__stack">React, Sass, Node.js, Express.js</span>
+                        <p className="project__description">An inventory management system built by collaborating in a team with a focus on Agile methodology. 
+                            Required tasks were set up in a JIRA kanban board and stand-ups were done every day for a week with a new acting project manager each day.
+                            Mockups an style guides were provided in Figma and collaboration done via GitHub and Slack.</p>
+                        <a href="https://github.com/skherad/in-stock__frontend" target="_blank"><img src={github}></img></a>
                     </div>
                 </div>
             </section>
-            {/* <div className="section-divider">| | |</div>
-            <section className="contact" id="contact">
-                <h2 className="section-title">Contact</h2>
-            </section> */}
         </main>
     );
 }
