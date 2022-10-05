@@ -7,6 +7,7 @@ import wnba2 from '../../assets/images/WNBA-preview2.png';
 import instock from '../../assets/images/instock-preview.png';
 import github from '../../assets/icons/github.svg';
 import linkedin from '../../assets/icons/linkedin.svg';
+import headshot from '../../assets/images/headshot.jpg';
 
 export default function HomePage() {
     return (
@@ -31,7 +32,7 @@ export default function HomePage() {
                         As a recent web development graduate from Brainstation, I am excited to complete the program with a toolkit full 
                         of technologies and problem-solving skills to become a successful web developer. I hope to be able to bring 
                         intelligent designs to life and contribute to positive user experiences on the web.</p>
-                        <img className="about__image" src="https://via.placeholder.com/200" alt="Sapphira"></img>
+                        <img className="about__image" src={headshot} alt="Sapphira"></img>
                 </div>
                 <a className="about__link" href="https://github.com/saphzheng"><img className="about__icon" src={linkedin} alt="LinkedIn"></img></a>
                 <a className="about__link" href="https://www.linkedin.com/in/sapphira-zheng"><img className="about__icon" src={github} alt="GitHub"></img></a>
