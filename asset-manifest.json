@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.4c38ef11.css",
-    "main.js": "/static/js/main.9c0f319e.js",
-    "static/media/headshot.jpg": "/static/media/headshot.5cb030836cd3f5f5d465.jpg",
-    "static/media/main-bg.jpg": "/static/media/main-bg.a7f4abeb2514f3c43e17.jpg",
+    "main.css": "/static/css/main.6eed0072.css",
+    "main.js": "/static/js/main.08b407e1.js",
+    "static/media/headshot.jpg": "/static/media/headshot.cd729db9787ed9d83699.jpg",
     "static/media/WNBA-preview2.png": "/static/media/WNBA-preview2.ad1a7bf8b2da265901b0.png",
     "static/media/WNBA-preview.png": "/static/media/WNBA-preview.0a4df05f84407efbd82d.png",
     "static/media/ontrack-preview.png": "/static/media/ontrack-preview.001740077894ad507aa9.png",
@@ -11,11 +10,11 @@
     "static/media/github.svg": "/static/media/github.04be58c17b3d5e9744424d414240dd85.svg",
     "index.html": "/index.html",
     "static/media/linkedin.svg": "/static/media/linkedin.27a3f479ca1bbb0ceef19e395081fb94.svg",
-    "main.4c38ef11.css.map": "/static/css/main.4c38ef11.css.map",
-    "main.9c0f319e.js.map": "/static/js/main.9c0f319e.js.map"
+    "main.6eed0072.css.map": "/static/css/main.6eed0072.css.map",
+    "main.08b407e1.js.map": "/static/js/main.08b407e1.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c38ef11.css",
-    "static/js/main.9c0f319e.js"
+    "static/css/main.6eed0072.css",
+    "static/js/main.08b407e1.js"
   ]
 }
