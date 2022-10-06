@@ -1,0 +1,6 @@
+@use '../../styles/mixins.scss' as *;
+
+.footer {
+    @include flex-contents();
+    padding-bottom: 1rem;
+}
