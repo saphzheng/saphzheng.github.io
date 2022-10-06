@@ -7,7 +7,6 @@ import wnba2 from '../../assets/images/WNBA-preview2.png';
 import instock from '../../assets/images/instock-preview.png';
 import github from '../../assets/icons/github.svg';
 import linkedin from '../../assets/icons/linkedin.svg';
-import headshot from '../../assets/images/headshot.jpg';
 
 export default function HomePage() {
     return (
