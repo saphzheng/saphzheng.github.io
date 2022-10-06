@@ -1,0 +1,50 @@
+@use '../../styles/mixins' as *;
+@use '../../styles/colors' as *;
+
+.header {
+    @include flex-contents(space-between, flex-end);
+
+    &__logo {
+        margin: 3rem 0 0 4rem;
+    }
+
+    &__nav {
+        display: flex;
+        list-style: none;
+        margin: 0.5rem 3rem;
+        padding: 0;
+
+        @include desktop {
+            font-size: 1rem;
+        }
+    }
+
+    &__nav-item {
+        display: inline-block;
+        position: relative;
+
+        &:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: -0.25rem;
+            left: 0;
+            background-color: $primary-color;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+    }
+
+    &__nav-link {
+        text-decoration: none;
+        // color: $primary-color;
+        color: black;
+    }
+}
