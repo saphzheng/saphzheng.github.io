@@ -1,5 +1,6 @@
 import './HomePage.scss';
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { Link } from 'react-router-dom';
 import headshot from '../../assets/images/headshot.jpg';
 import ontrack from '../../assets/images/ontrack-preview.png';
 import wnba from '../../assets/images/WNBA-preview.png';
@@ -28,16 +29,16 @@ export default function HomePage() {
                         intelligent designs to life and contribute to positive user experiences on the web.</p>
                         <img className="about__image" src={headshot} alt="Sapphira"></img>
                 </div>
-                <a className="about__link" href="https://github.com/saphzheng"><img className="about__icon" src={github} alt="GitHub"></img></a>
-                <a className="about__link" href="https://www.linkedin.com/in/sapphira-zheng"><img className="about__icon" src={linkedin} alt="LinkedIn"></img></a>
+                <a className="about__link icon" href="https://github.com/saphzheng"><img className="about__icon" src={github} alt="GitHub"></img></a>
+                <a className="about__link icon" href="https://www.linkedin.com/in/sapphira-zheng"><img className="about__icon" src={linkedin} alt="LinkedIn"></img></a>
             </section>
             <section className="experience" id="experience">
                 <h2 className="section-title">EXPERIENCE</h2>
                 <Tabs className="tabs">
                     <TabList className="tabs__list">
-                        <Tab className="tabs__link" selectedClassName="tabs__link--active">1</Tab>
-                        <Tab className="tabs__link" selectedClassName="tabs__link--active">2</Tab>
-                        <Tab className="tabs__link" selectedClassName="tabs__link--active">3</Tab>
+                        <Tab className="tabs__link" selectedClassName="tabs__link--active">2018</Tab>
+                        <Tab className="tabs__link" selectedClassName="tabs__link--active">2017</Tab>
+                        <Tab className="tabs__link" selectedClassName="tabs__link--active">2016</Tab>
                     </TabList>
                     <TabPanel className="tabs__panel">
                         <h3 className="experience__position">Front-End Software Engineering QA Intern</h3>
@@ -76,14 +77,13 @@ export default function HomePage() {
                 <div className="project">
                     <img className="project__image" src={ontrack} alt="onTrack Fitness"></img>
                     <div className="project__text">
-                        <a className="project__link" href="https://ontrack-fitness.herokuapp.com/" target="_blank">
-                            <h3 className="project__title project__title--link">onTrack Fitness <i className="bi-arrow-up-right"></i></h3></a>
-                        <span className="project__stack">React, Node.js, Express.js, TailwindCSS, Auth0</span>
+                        <h3 className="project__title">onTrack Fitness</h3>
                         <p className="project__description">An online workout aid that aims to help users reach fitness goals by providing 
                             an easy-to-use platform to structure/log workouts and visualize progress. An alternative to physical workout journals 
                             which are easy to lose and tedious to review. onTrack Fitness focuses on convenience through automatic data visualization 
                             and multiple device support.</p>
-                        <a href="https://github.com/saphzheng/on-track__client" target="_blank"><img src={github}></img></a>
+                        <a className="project__link" href="https://ontrack-fitness.herokuapp.com/" target="_blank">Visit Live Site</a>
+                        <a className="project__icon icon" href="https://github.com/saphzheng/on-track__client" target="_blank"><img src={github}></img></a>
                     </div>
                 </div>
                 <div className="project">
@@ -94,7 +94,8 @@ export default function HomePage() {
                         <p className="project__description">An inventory management system built by collaborating in a team with a focus on Agile methodology. 
                             Required tasks were set up in a JIRA kanban board and stand-ups were done every day for a week with a new acting project manager each day.
                             Mockups and style guides were provided in Figma and collaboration done via GitHub and Slack.</p>
-                        <a href="https://github.com/Matthew-Hawk/In-Stock__Backend" target="_blank"><img src={github}></img></a>
+                        {/* <Link className="project__link" href="/instock" target="_blank">More Details</Link> */}
+                        <a className="project__icon icon" href="https://github.com/Matthew-Hawk/In-Stock__Backend" target="_blank"><img src={github}></img></a>
                     </div>
                 </div>
                 <div className="project">
@@ -109,7 +110,8 @@ export default function HomePage() {
                             Given the problem of increasing fan engagement, our strategy focussed on connecting to the user on a personal level by 
                             leveraging the WNBA players as influencers, leaning into paid advertisement, and incorporating sharing functions within the app.
                             Mockups and discussions were done using Figma and a prototype of the app was built to showcase our vision to the WBNA panel.</p>
-                        <a href="https://github.com/Matthew-Hawk/Industry-WNBA" target="_blank"><img src={github}></img></a>
+                            {/* <Link className="project__link" href="/wnba-hackathon" target="_blank">More Details</Link> */}
+                        <a className="project__icon icon" href="https://github.com/Matthew-Hawk/Industry-WNBA" target="_blank"><img src={github}></img></a>
                     </div>
                 </div>
             </section>
