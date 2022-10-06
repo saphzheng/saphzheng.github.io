@@ -1,6 +1,6 @@
 import './HomePage.scss';
-import { Parallax } from 'react-parallax';
-import heroImage from '../../assets/images/main-bg.jpg';
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import headshot from '../../assets/images/headshot.jpg';
 import ontrack from '../../assets/images/ontrack-preview.png';
 import wnba from '../../assets/images/WNBA-preview.png';
 import wnba2 from '../../assets/images/WNBA-preview2.png';
@@ -12,20 +12,15 @@ import headshot from '../../assets/images/headshot.jpg';
 export default function HomePage() {
     return (
         <main className="home">
-            <Parallax blur={5} bgImage={heroImage} bgImageAlt="background" strength={600}>
-                <div className="hero">
+            <div className="hero">
+                <div className="hero__content">
                     <h1 className="hero__title">Sapphira Zheng</h1>
-                    <ul className="hero__nav">
-                        <li className="hero__nav-item"><a className="hero__nav-link" href="#about">About |&nbsp;</a></li>
-                        <li className="hero__nav-item"><a className="hero__nav-link" href="#projects">Projects |&nbsp;</a></li>
-                        <li className="hero__nav-item"><a className="hero__nav-link" href="https://docs.google.com/document/d/e/2PACX-1vTcTu5hINOBz4mqr_suK0p3VKFKykDrKBbkETy7IdyCBueCedAjc4yG1sJmiTuY49m8eyx634OsPuC-/pub" target="_blank">
-                            Resume<i className="bi-arrow-up-right"></i></a></li>
-                    </ul>
+                    <h2 className="hero__subtitle">Web Developer</h2>
+                    <a className="hero__cta" href="#projects">Check out my projects</a>
                 </div>
-            </Parallax>
-            <div className="section-divider">| | |</div>
+            </div>
             <section className="about" id="about">
-                <h2 className="section-title">ABOUT</h2>
+                <h2 className="section-title">ABOUT ME</h2>
                 <div className="about__content">
                     <p className="about__text">Since graduating from the University of Waterloo in Kinesiology and Computer Science, I have been 
                         working towards kickstarting a career in web development through bootcamps, side projects, and networking. 
@@ -34,10 +29,49 @@ export default function HomePage() {
                         intelligent designs to life and contribute to positive user experiences on the web.</p>
                         <img className="about__image" src={headshot} alt="Sapphira"></img>
                 </div>
-                <a className="about__link" href="https://github.com/saphzheng"><img className="about__icon" src={linkedin} alt="LinkedIn"></img></a>
-                <a className="about__link" href="https://www.linkedin.com/in/sapphira-zheng"><img className="about__icon" src={github} alt="GitHub"></img></a>
+                <a className="about__link" href="https://github.com/saphzheng"><img className="about__icon" src={github} alt="GitHub"></img></a>
+                <a className="about__link" href="https://www.linkedin.com/in/sapphira-zheng"><img className="about__icon" src={linkedin} alt="LinkedIn"></img></a>
             </section>
-            {/* <div className="section-divider">| | |</div> */}
+            <section className="experience" id="experience">
+                <h2 className="section-title">EXPERIENCE</h2>
+                <Tabs className="tabs">
+                    <TabList className="tabs__list">
+                        <Tab className="tabs__link" selectedClassName="tabs__link--active">1</Tab>
+                        <Tab className="tabs__link" selectedClassName="tabs__link--active">2</Tab>
+                        <Tab className="tabs__link" selectedClassName="tabs__link--active">3</Tab>
+                    </TabList>
+                    <TabPanel className="tabs__panel">
+                        <h3 className="experience__position">Front-End Software Engineering QA Intern</h3>
+                        <h4 className="experience__employer">Flipp Corporation</h4>
+                        <p className="experience__dates">Jan - Apr 2018</p>
+                        <ul className="experience__points">
+                            <li className="experience__point">Automated UI tests and processes to improve efficiency for regression testing.</li>
+                            <li className="experience__point">Collaborated with developers on testing requirements for new features to establish scope of tests.</li>
+                            <li className="experience__point">Ensured consistent functionality across Android and iOS devices.</li>
+                        </ul>
+                    </TabPanel>
+                    <TabPanel className="tabs__panel">
+                        <h3 className="experience__position">Embedded Software Engineering Intern</h3>
+                        <h4 className="experience__employer">Ignis Innovation Inc.</h4>
+                        <p className="experience__dates">May - Aug 2017</p>
+                        <ul className="experience__points">
+                            <li className="experience__point">Designed schematics and PCB layouts for daughterboards on Altium Designer to connect Hikey single board computers to display panels.</li>
+                            <li className="experience__point">Developed Python script to automate generation of C header files from gamma chip pin map configuration described in Excel files.</li>
+                            <li className="experience__point">Created C++ library to control ELDIM camera and process pixel data, replacing manual GUI navigation.</li>
+                        </ul>
+                    </TabPanel>
+                    <TabPanel className="tabs__panel">
+                        <h3 className="experience__position">Software Quality Assurance Analyst</h3>
+                        <h4 className="experience__employer">CaseBank Technologies Inc</h4>
+                        <p className="experience__dates">Sept - Dec 2016</p>
+                        <ul className="experience__points">
+                            <li className="experience__point">Pioneered new testing framework on iOS and Android for Spotlight airplane diagnostics software.</li>
+                            <li className="experience__point">Led white/black box and stress testing for ChronicX’s airplane maintenance system, revealing critical memory issues over high input loads and other performance bottlenecks.</li>
+                            <li className="experience__point">Designed new standardized testing procedures for current and future employees</li>
+                        </ul>
+                    </TabPanel>
+                </Tabs>
+            </section>
             <section className="projects" id="projects">
                 <h2 className="section-title">PROJECTS</h2>
                 <div className="project">
@@ -54,6 +88,17 @@ export default function HomePage() {
                     </div>
                 </div>
                 <div className="project">
+                    <img className="project__image" src={instock} alt="Instock"></img>
+                    <div className="project__text">
+                        <h3 className="project__title">InStock</h3>
+                        <span className="project__stack">React, Sass, Node.js, Express.js</span>
+                        <p className="project__description">An inventory management system built by collaborating in a team with a focus on Agile methodology. 
+                            Required tasks were set up in a JIRA kanban board and stand-ups were done every day for a week with a new acting project manager each day.
+                            Mockups and style guides were provided in Figma and collaboration done via GitHub and Slack.</p>
+                        <a href="https://github.com/Matthew-Hawk/In-Stock__Backend" target="_blank"><img src={github}></img></a>
+                    </div>
+                </div>
+                <div className="project">
                     <div className="project__images">
                         <img className="project__image--mobile" src={wnba} alt="WNBA industry project"></img>
                         <img className="project__image--mobile" src={wnba2} alt="WNBA industry project"></img>
@@ -61,22 +106,11 @@ export default function HomePage() {
                     <div className="project__text">
                         <h3 className="project__title">WNBA Hackathon</h3>
                         <span className="project__stack">React, Sass</span>
-                        <p className="project__description">A redesign of the WNBA mobile app in a 24-hour hackathon with the goal 
-                            of increasing fan engagement. Our strategy focussed on connecting to the user on a personal level by 
+                        <p className="project__description">A redesign of the WNBA mobile app completed in a 24-hour cross-discipline hackathon at Brainstation.
+                            Given the problem of increasing fan engagement, our strategy focussed on connecting to the user on a personal level by 
                             leveraging the WNBA players as influencers, leaning into paid advertisement, and incorporating sharing functions within the app.
                             Mockups and discussions were done using Figma and a prototype of the app was built to showcase our vision to the WBNA panel.</p>
                         <a href="https://github.com/Matthew-Hawk/Industry-WNBA" target="_blank"><img src={github}></img></a>
-                    </div>
-                </div>
-                <div className="project">
-                    <img className="project__image" src={instock} alt="Instock"></img>
-                    <div className="project__text">
-                        <h3 className="project__title">InStock</h3>
-                        <span className="project__stack">React, Sass, Node.js, Express.js</span>
-                        <p className="project__description">An inventory management system built by collaborating in a team with a focus on Agile methodology. 
-                            Required tasks were set up in a JIRA kanban board and stand-ups were done every day for a week with a new acting project manager each day.
-                            Mockups an style guides were provided in Figma and collaboration done via GitHub and Slack.</p>
-                        <a href="https://github.com/skherad/in-stock__frontend" target="_blank"><img src={github}></img></a>
                     </div>
                 </div>
             </section>
