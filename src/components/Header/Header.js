@@ -10,7 +10,7 @@ export default function Header() {
                 <li className="header__nav-item"><a className="header__nav-link" href="#about">About</a></li>&nbsp;|&nbsp;
                 <li className="header__nav-item"><a className="header__nav-link" href="#experience">Experience</a></li>&nbsp;|&nbsp;
                 <li className="header__nav-item"><a className="header__nav-link" href="#projects">Projects</a></li>&nbsp;|&nbsp;
-                <li className="header__nav-item"><a className="header__nav-link" href="https://docs.google.com/document/d/e/2PACX-1vTcTu5hINOBz4mqr_suK0p3VKFKykDrKBbkETy7IdyCBueCedAjc4yG1sJmiTuY49m8eyx634OsPuC-/pub" target="_blank">
+                <li className="header__nav-item"><a className="header__nav-link" href="https://www.dropbox.com/s/cc2b3gz7pe66u1t/Sapphira%20Zheng%20%E2%80%93%20Resume.pdf?dl=0" target="_blank">
                     Resume<i className="bi-arrow-up-right"></i></a></li>
             </ul>
         </header>
