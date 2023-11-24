@@ -39,10 +39,20 @@ export default function HomePage() {
                 <h2 className="section-title">EXPERIENCE</h2>
                 <Tabs className="tabs">
                     <TabList className="tabs__list">
+                        <Tab className="tabs__link" selectedClassName="tabs__link--active">2023</Tab>
                         <Tab className="tabs__link" selectedClassName="tabs__link--active">2018</Tab>
                         <Tab className="tabs__link" selectedClassName="tabs__link--active">2017</Tab>
-                        <Tab className="tabs__link" selectedClassName="tabs__link--active">2016</Tab>
                     </TabList>
+                    <TabPanel className="tabs__panel">
+                        <h3 className="experience__position">Web Developer</h3>
+                        <h4 className="experience__employer">Living Water Counselling Centre</h4>
+                        <p className="experience__dates">Jan 2023 - Current</p>
+                        <ul className="experience__points">
+                            <li className="experience__point">Rework company webpage using WordPress and migrate complex features to external platforms to improve usability.</li>
+                            <li className="experience__point">Work with UX designers to build fundraising campaign sites and donation pages.</li>
+                            <li className="experience__point">Set up an in-house Linux server to host Moodle LMS locally with the goal of restructuring course delivery.</li>
+                        </ul>
+                    </TabPanel>
                     <TabPanel className="tabs__panel">
                         <h3 className="experience__position">Front-End Software Engineering QA Intern</h3>
                         <h4 className="experience__employer">Flipp Corporation</h4>
@@ -61,16 +71,6 @@ export default function HomePage() {
                             <li className="experience__point">Designed schematics and PCB layouts for daughterboards on Altium Designer to connect Hikey single board computers to display panels.</li>
                             <li className="experience__point">Developed Python script to automate generation of C header files from gamma chip pin map configuration described in Excel files.</li>
                             <li className="experience__point">Created C++ library to control ELDIM camera and process pixel data, replacing manual GUI navigation.</li>
-                        </ul>
-                    </TabPanel>
-                    <TabPanel className="tabs__panel">
-                        <h3 className="experience__position">Software Quality Assurance Analyst</h3>
-                        <h4 className="experience__employer">CaseBank Technologies Inc</h4>
-                        <p className="experience__dates">Sept - Dec 2016</p>
-                        <ul className="experience__points">
-                            <li className="experience__point">Pioneered new testing framework on iOS and Android for Spotlight airplane diagnostics software.</li>
-                            <li className="experience__point">Led white/black box and stress testing for ChronicX’s airplane maintenance system, revealing critical memory issues over high input loads and other performance bottlenecks.</li>
-                            <li className="experience__point">Designed new standardized testing procedures for current and future employees</li>
                         </ul>
                     </TabPanel>
                 </Tabs>
