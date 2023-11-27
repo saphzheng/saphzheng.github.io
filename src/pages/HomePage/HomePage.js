@@ -88,7 +88,7 @@ export default function HomePage() {
                                 and multiple device support.
                                 <br></br><br></br>
                                 More details can be found in project ReadMe on GitHub</p>
-                            <a className="project__link" href="https://ontrack-fitness.herokuapp.com/" target="_blank">Visit Live Site <i className="bi-arrow-up-right"></i></a>
+                            <a className="project__link" href="https://ontrack-fitness.web.app/" target="_blank">Visit Live Site <i className="bi-arrow-up-right"></i></a>
                             <a className="project__icon icon" href="https://github.com/saphzheng/on-track__client" target="_blank"><img src={github}></img></a>
                         </div>
                     </div>
